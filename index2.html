@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#container {
+  width: 60vw;
+  aspect-ratio: 2/1;
+  margin: auto;
+  border: solid black 2px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+  scrollbar-color: white white;
+}
+
+.blue {
+  background-color: lightblue;
+  height: 95%;
+  aspect-ratio: 1/2;
+}
+
+.green {
+  background-color: lightgreen;
+  height: 50%;
+  aspect-ratio: 2/1;
+}
+
+.blue, .green {
+  display: inline-block;
+  margin: 5px;
+  scroll-snap-align: center;
+}
+</style>
+</head>
+<body>
+<div id="container">
+    <a href="https://www.google.ch" class = "blue"></a>
+  <div class="green"></div>
+  <div class="blue"></div>
+  <div class="green"></div>
+  <div class="blue"></div>
+  <div class="green"></div>
+  <div class="blue"></div>
+</div>
+
+</body>
+</html>
